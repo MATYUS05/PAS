@@ -5,6 +5,7 @@ import Prev from "../../gambar/prev.png";
 import Chang from"../../gambar/chang.jpg";
 import Edbert from"../../gambar/edbert.jpg";
 import Jansen from"../../gambar/jansen.jpg";
+import Matthew from"../../gambar/matthew.jpg";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -39,10 +40,10 @@ const slideBackward = () =>{
             <li>
               <div className="slide">
                 <div className="member-info">
-                  <img src="#" alt="Logo" />
+                  <img src={Matthew} alt="Logo" />
                   <div>
                     <h3>Matthew Yuslih</h3>
-                    <span>Jakarta</span>
+                    <span>Jakarta, Indonesia</span>
                   </div>
                 </div>
                 <p>
@@ -62,7 +63,7 @@ const slideBackward = () =>{
                   <img src={Chang} alt="Logo" />
                   <div>
                     <h3>Dhaniel Chang</h3>
-                    <span>Jakarta</span>
+                    <span>Jambi, Indonesia</span>
                   </div>
                 </div>
                 <p>
@@ -82,7 +83,7 @@ const slideBackward = () =>{
                   <img src={Edbert} alt="Logo" />
                   <div>
                     <h3>Edbert</h3>
-                    <span>Jakarta</span>
+                    <span>Banten, Indonesia</span>
                   </div>
                 </div>
                 <p>
@@ -102,7 +103,7 @@ const slideBackward = () =>{
                   <img src={Jansen} alt="Logo" />
                   <div>
                     <h3>Jansen</h3>
-                    <span>Jakarta</span>
+                    <span>Banten, Indonesia</span>
                   </div>
                 </div>
                 <p>
