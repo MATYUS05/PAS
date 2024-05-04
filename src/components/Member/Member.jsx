@@ -58,7 +58,7 @@ const slideBackward = () =>{
                 <div className="member-info">
                   <img src="#" alt="Logo" />
                   <div>
-                    <h3>Matthew Yuslih</h3>
+                    <h3>Dhaniel Chang</h3>
                     <span>Jakarta</span>
                   </div>
                 </div>
