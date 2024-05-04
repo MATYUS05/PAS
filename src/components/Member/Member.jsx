@@ -2,6 +2,9 @@ import React,{useRef, useEffect} from "react";
 import "./Member.css";
 import Next from "../../gambar/next.png";
 import Prev from "../../gambar/prev.png";
+import Chang from"../../gambar/chang.jpg";
+import Edbert from"../../gambar/edbert.jpg";
+import Jansen from"../../gambar/jansen.jpg";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -56,7 +59,7 @@ const slideBackward = () =>{
             <li>
               <div className="slide">
                 <div className="member-info">
-                  <img src="#" alt="Logo" />
+                  <img src={Chang} alt="Logo" />
                   <div>
                     <h3>Dhaniel Chang</h3>
                     <span>Jakarta</span>
@@ -76,9 +79,9 @@ const slideBackward = () =>{
             <li>
               <div className="slide">
                 <div className="member-info">
-                  <img src="#" alt="Logo" />
+                  <img src={Edbert} alt="Logo" />
                   <div>
-                    <h3>Matthew Yuslih</h3>
+                    <h3>Edbert</h3>
                     <span>Jakarta</span>
                   </div>
                 </div>
@@ -96,9 +99,9 @@ const slideBackward = () =>{
             <li>
               <div className="slide">
                 <div className="member-info">
-                  <img src="#" alt="Logo" />
+                  <img src={Jansen} alt="Logo" />
                   <div>
-                    <h3>Matthew Yuslih</h3>
+                    <h3>Jansen</h3>
                     <span>Jakarta</span>
                   </div>
                 </div>
