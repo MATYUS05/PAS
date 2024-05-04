@@ -47,13 +47,7 @@ const slideBackward = () =>{
                   </div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque ullam sit voluptatum dolorem temporibus totam nostrum
-                  magnam, culpa nam sequi, eaque cum repellat reiciendis
-                  officiis labore, hic in odio omnis quisquam nobis veniam
-                  quaerat. Illo nemo placeat, molestiae, labore facere sint
-                  aspernatur deserunt veritatis aperiam eligendi quo soluta, nam
-                  non!
+                  Hanya pemuda biasa yang memiliki tujuan untuk survive di Informatika. Quotes untuk semester ini -{'>'} Di dunia coding, setiap karakter memiliki arti, mengarungi lautan instruksi untuk menciptakan aplikasi yang memukau dan berguna.
                 </p>
               </div>
             </li>
@@ -67,13 +61,7 @@ const slideBackward = () =>{
                   </div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque ullam sit voluptatum dolorem temporibus totam nostrum
-                  magnam, culpa nam sequi, eaque cum repellat reiciendis
-                  officiis labore, hic in odio omnis quisquam nobis veniam
-                  quaerat. Illo nemo placeat, molestiae, labore facere sint
-                  aspernatur deserunt veritatis aperiam eligendi quo soluta, nam
-                  non!
+                Saya adalah pemuda merantau dari jambi dengan harapan orang tua di tangan agar bisa menjadi pemuda sukses saya memiliki prinsip hidup : selingkuh hanya untuk suami istri kalau masi pacaran seleksi namanya. :3
                 </p>
               </div>
             </li>
@@ -82,18 +70,12 @@ const slideBackward = () =>{
                 <div className="member-info">
                   <img src={Edbert} alt="Logo" />
                   <div>
-                    <h3>Edbert</h3>
+                    <h3>Edbert Rendrahadi </h3>
                     <span>Banten, Indonesia</span>
                   </div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque ullam sit voluptatum dolorem temporibus totam nostrum
-                  magnam, culpa nam sequi, eaque cum repellat reiciendis
-                  officiis labore, hic in odio omnis quisquam nobis veniam
-                  quaerat. Illo nemo placeat, molestiae, labore facere sint
-                  aspernatur deserunt veritatis aperiam eligendi quo soluta, nam
-                  non!
+                Pemuda yang yakin sabar sadar. Mahasiswa aktif UMN angkatan 2023 jurusan informatika. Gitar kupetik bassku betot, hai nona cantik you're always in my thoughts {'<'}3
                 </p>
               </div>
             </li>
@@ -107,13 +89,7 @@ const slideBackward = () =>{
                   </div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cumque ullam sit voluptatum dolorem temporibus totam nostrum
-                  magnam, culpa nam sequi, eaque cum repellat reiciendis
-                  officiis labore, hic in odio omnis quisquam nobis veniam
-                  quaerat. Illo nemo placeat, molestiae, labore facere sint
-                  aspernatur deserunt veritatis aperiam eligendi quo soluta, nam
-                  non!
+                Saya merupakan lelaki asli daratan Cina memiliki masa lalu sebagai pristel master dan memutuskan untuk mengubah masa depan dengan merantau ke negri konoha dan menempuh ilmu coding demi adu ilmu dengan tetangga cina saya. 
                 </p>
               </div>
             </li>
