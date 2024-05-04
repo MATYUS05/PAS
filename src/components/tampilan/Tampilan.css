@@ -1,0 +1,72 @@
+.Tampilan {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3) 
+  ),
+  url("../../gambar/jakarta10.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 6s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+
+.Tampilan-text {
+  text-align: center;
+  max-width: 800px;
+}
+
+.Tampilan-text h1 {
+  font-size: 54px;
+  font-weight: 600;
+  animation: text 1s ease-out;
+  text-transform: uppercase;
+}
+
+.Tampilan-text p {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.7;
+  animation: text 1s ease-out;
+}
+
+@keyframes text {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 850px){
+    .Tampilan-text h1{
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 640px){
+    .Tampilan-text h1{
+      font-size: 30px;
+      max-width: 400px;
+      margin: auto;
+    }
+    .Tampilan-text p{
+      font-size: 14px;
+      margin: 15px auto 30px;
+    }
+  }
+  
