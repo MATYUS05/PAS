@@ -31,7 +31,7 @@ const Member = () => {
     slider.current.style.transform = `translateX(${tx}%)`;
   };
   return (
-    <div>
+    <div className="container">
       <div className="Member" id="contact" data-aos="fade-up">
         <h1>About Us</h1>
         <img src={Next} alt="" className="next-btn" onClick={slideForward} />
