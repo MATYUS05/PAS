@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 
 const TtgJkt = () => {
     useEffect(()=> {
-        AOS.init({duration: 1000})
+        AOS.init({duration: 2000})
     }, [])
     return(
         <div id="about" className="container"> 

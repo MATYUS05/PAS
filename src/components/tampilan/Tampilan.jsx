@@ -1,5 +1,6 @@
 import React from "react";
 import "./Tampilan.css";
+import { Link } from "react-router-dom";
 import dark_arrow from "../../gambar/darkarrow.jpg";
 
 const Tampilan = () => {
@@ -12,7 +13,7 @@ const Tampilan = () => {
           Explore the Charm, Discover Jakarta!
         </p>
         <button className="btn">
-          <a href="/Explore">Explore More<img src={dark_arrow} alt=""/></a>
+          <a href="/Explore"><Link to="/game">Coba Game Kami<img src={dark_arrow} alt=""/></Link></a>
         </button>
       </div>
     </div>

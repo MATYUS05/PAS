@@ -9,7 +9,7 @@
     background-color: #FFFFFF;
     border-radius: 5px;
     overflow: hidden; 
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .TtgJkt img {
@@ -37,4 +37,22 @@
 .TtgJkt:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1000px) {
+    .TtgJkt {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 840px) {
+    .TtgJkt {
+        padding: 10px;
+    }
+    .hide-mobile-menu {
+        display: none; /* Sembunyikan elemen .hide-mobile-menu */
+    }
+    nav ul {
+        z-index: 1; /* Tampilkan menu di atas konten utama */
+    }
 }

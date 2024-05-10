@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 function GambarWisata(props) {
   return (
     <>
       <li className='cards__item'>
-        <Link className='cards__item__link'>
+        <Link className='cards__item__link' onClick={props.onClick}>
           <figure className='cards__item__pic-wrap'>
             <img
               className='cards__item__img'
