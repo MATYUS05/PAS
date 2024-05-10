@@ -44,7 +44,6 @@ function Game() {
                 correctWordRef.current = randomObj.kata.toLowerCase(); 
                 inputRef.current.value = "";
                 inputRef.current.setAttribute("maxlength", correctWordRef.current.length);
-                console.log(wordArray);
             };
 
             initGame();
@@ -63,14 +62,18 @@ function Game() {
                 }
             };
 
-            refreshBtn.addEventListener("click", initGame);
-            checkBtn.addEventListener("click", checkWord);
-            inputRef.current.addEventListener("keypress", handleKeyPress);
+            if (refreshBtn && checkBtn && inputRef.current) {
+                refreshBtn.addEventListener("click", initGame);
+                checkBtn.addEventListener("click", checkWord);
+                inputRef.current.addEventListener("keypress", handleKeyPress);
+            }
 
             return () => {
-                refreshBtn.removeEventListener("click", initGame);
-                checkBtn.removeEventListener("click", checkWord);
-                inputRef.current.removeEventListener("keypress", handleKeyPress);
+                if (refreshBtn && checkBtn && inputRef.current) {
+                    refreshBtn.removeEventListener("click", initGame);
+                    checkBtn.removeEventListener("click", checkWord);
+                    inputRef.current.removeEventListener("keypress", handleKeyPress);
+                }
                 clearInterval(timerRef.current);
             };
         }
