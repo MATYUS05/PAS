@@ -1,14 +1,25 @@
-import React from "react";
+import * as React from "react";
 import "./Index.css";
 import App from "./App";
+import Game from "./components/Game/Game";
 import * as ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import Member from "./components/Member/Member";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/game",
+    element:<Game /> ,
+  },
+  {
+    path: "/about",
+    element:<Member /> ,
   },
 ]);
 
@@ -17,3 +28,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+

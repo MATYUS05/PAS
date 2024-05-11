@@ -1,0 +1,10 @@
+.judul-sub{
+    text-align: center;
+    margin-top: -70px;
+    margin-bottom: 80px;
+}
+
+.judul-sub h1{
+    text-transform: uppercase;
+    font-size: 48px;
+}
