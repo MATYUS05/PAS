@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../navbar/Navbar";
 import "./Member.css";
 import Next from "../../gambar/next.png";
 import Prev from "../../gambar/prev.png";

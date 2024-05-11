@@ -6,6 +6,7 @@ import TtgJkt from "./components/TentangJakarta/TentangJkt";
 import Footer from "./components/Footer/Footer";
 import News from "./components/News/News";
 import JNews from "./components/Judul News/JNews";
+import Kuliner from "./components/Kuliner/Kuliner";
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
             <div className="container">
                 <TtgJkt />
                 <TempatWisata />
+                <Kuliner />
                 <JNews />
                 <News />
                 <Footer />

@@ -1,7 +1,7 @@
 .square{
     background:#FFF;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    margin: -30px 0 50px 0;
+    margin: 100px 0 50px 0;
     padding: 20px; 
     min-height: 30vh;
     display: flex;

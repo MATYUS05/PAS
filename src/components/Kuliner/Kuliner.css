@@ -1,0 +1,59 @@
+.judul-kuliner {
+  margin-top: -50px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.sub-judul{
+    text-align: center;
+}
+.card-kuliner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.isi-card {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../gambar/makanan.jpg");
+  background-size: cover;
+  object-fit: cover;
+  border: none;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style-type: none ;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  margin: 30px;
+}
+
+.isi-card p{
+    text-align: justify;
+    padding: 15px;
+}
+
+.isi-card h3{
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: -20px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.isi-card button{
+    background: white;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    padding: 8px;
+}
+.isi-card button:hover{
+    background: rgb(0, 0, 0);
+    color: white;
+}

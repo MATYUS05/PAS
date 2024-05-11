@@ -1,6 +1,10 @@
 nav{
     width: 100%;
-    color: black;
+    color: white;
+    background: linear-gradient(
+    rgba(255, 255, 255, 0.2), 
+    rgba(255, 255, 255, 0.2) 
+  );
     padding: 4px 0;
     position: fixed;
     top: 0;
@@ -69,7 +73,7 @@ nav ul li{
     }
     .menu-icon{
         display: block;
-        width: 30px;
+        width: 20px;
         cursor: pointer;
     }
     .hide-mobile-menu{
