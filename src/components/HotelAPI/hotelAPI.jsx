@@ -19,7 +19,7 @@ function HotelList() {
             city_ids: '289251'
           },
           headers: {
-            'X-RapidAPI-Key': '737247b112msh2d837d66b7bdb89p1c5cd5jsn42606f2e5dac',
+            'X-RapidAPI-Key': '063041d651mshf3c0857c192f57ep13c57ajsn08506019b5c4',
             'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
           }
         });
