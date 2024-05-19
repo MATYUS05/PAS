@@ -73,65 +73,67 @@ function HotelList() {
   );
 
   return (
-    <div className="container-hotel1">
-      <h1 className="title">Hotel and Destinations in Jakarta</h1>
-      <div className="search-sort-container">
-        <div className="search-container">
-          <form className="search-bar" onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="search"
-              placeholder="Search hotels..."
-              value={searchTerm}
-              onChange={handleSearch}
-              onKeyPress={handleKeyPress}
-            />
-            <button type="submit">Search</button>
-          </form>
+    <div className="HotelApi">
+      <div className="container-hotel1">
+        <h1 className="title">Hotel and Destinations in Jakarta</h1>
+        <div className="search-sort-container">
+          <div className="search-container">
+            <form className="search-bar" onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="search"
+                placeholder="Search hotels..."
+                value={searchTerm}
+                onChange={handleSearch}
+                onKeyPress={handleKeyPress}
+              />
+              <button type="submit">Search</button>
+            </form>
+          </div>
+          <div className="sort-buttons">
+            <button onClick={() => handleSort('name')}>
+              Sort by Name {sortedBy === 'name' && (isAscending ? '↑' : '↓')}
+            </button>
+          </div>
         </div>
-        <div className="sort-buttons">
-          <button onClick={() => handleSort('name')}>
-            Sort by Name {sortedBy === 'name' && (isAscending ? '↑' : '↓')}
-          </button>
-        </div>
-      </div>
-      <div className="search-results">
-        <div className="hotel-list">
-          {filteredHotels.map(hotel => (
-            <div key={hotel.dest_id} className="hotel-card">
-              <img className="hotel-image" src={hotel.image_url} alt={hotel.name} />
-              <div className="hotel-info">
-                <h2 className="hotel-name">{hotel.name}</h2>
-                <p className="hotel-address">{hotel.address}</p>
-                <button
-                  className="bookmark-button"
-                  onClick={() => handleBookmark(hotel)}
-                >
-                  {bookmarkedHotels.find(b => b.dest_id === hotel.dest_id) ? 'Remove Bookmark' : 'Add to Bookmarks'}
-                </button>
+        <div className="search-results">
+          <div className="hotel-list">
+            {filteredHotels.map(hotel => (
+              <div key={hotel.dest_id} className="hotel-card">
+                <img className="hotel-image" src={hotel.image_url} alt={hotel.name} />
+                <div className="hotel-info">
+                  <h2 className="hotel-name">{hotel.name}</h2>
+                  <p className="hotel-address">{hotel.address}</p>
+                  <button
+                    className="bookmark-button"
+                    onClick={() => handleBookmark(hotel)}
+                  >
+                    {bookmarkedHotels.find(b => b.dest_id === hotel.dest_id) ? 'Remove Bookmark' : 'Add to Bookmarks'}
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="bookmarked-section">
-        <h2 className="title">Bookmarked Hotels</h2>
-        <div className="hotel-list">
-          {bookmarkedHotels.map(hotel => (
-            <div key={hotel.dest_id} className="hotel-card">
-              <img className="hotel-image" src={hotel.image_url} alt={hotel.name} />
-              <div className="hotel-info">
-                <h2 className="hotel-name">{hotel.name}</h2>
-                <p className="hotel-address">{hotel.address}</p>
-                <button
-                  className="bookmark-button"
-                  onClick={() => handleBookmark(hotel)}
-                >
-                  Remove Bookmark
-                </button>
+        <div className="bookmarked-section">
+          <h2 className="title">Bookmarked Hotels</h2>
+          <div className="hotel-list">
+            {bookmarkedHotels.map(hotel => (
+              <div key={hotel.dest_id} className="hotel-card">
+                <img className="hotel-image" src={hotel.image_url} alt={hotel.name} />
+                <div className="hotel-info">
+                  <h2 className="hotel-name">{hotel.name}</h2>
+                  <p className="hotel-address">{hotel.address}</p>
+                  <button
+                    className="bookmark-button"
+                    onClick={() => handleBookmark(hotel)}
+                  >
+                    Remove Bookmark
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
