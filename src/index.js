@@ -2,6 +2,7 @@ import * as React from "react";
 import "./Index.css";
 import App from "./App";
 import Game from "./components/Game/Game";
+import CardList from "./components/Makanan/Makanan";
 import * as ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element:<Member /> ,
+  },
+  {
+    path: "/kulinerMKN",
+    element: <CardList />,
   },
 ]);
 

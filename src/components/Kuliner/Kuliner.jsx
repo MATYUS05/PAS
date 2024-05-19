@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Kuliner.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -16,7 +17,7 @@ const Kuliner = () => {
                 <div className="isi-card">
                         <h3>Taste of Jakarta: Exploring the Culinary Melting Pot</h3>
                         <p>Di kota ini, pengalaman kuliner melampaui batas-batas tradisional dengan sentuhan inovatif yang mengagumkan. Dari warung-warung kaki lima yang menyajikan hidangan-hidangan klasik dengan cita rasa autentik hingga restoran-restoran trendi yang menciptakan kreasi-kreasi baru yang memukau, setiap sudut kota adalah panggung bagi petualangan rasa yang tak terlupakan. Mulai dari sederetan warung-warung khas dengan cita rasa autentik yang menawarkan pengalaman kuliner yang menghubungkan dengan akar-akar budaya. </p>
-                        <button>Explore More</button>
+                        <button><Link to="/makanan">Explore More</Link></button>
                 </div>
                 <div className="isi-card">
                         <h3>Traditional Jakarta Beverages: Delighting Palates with Local Delicacies</h3>
