@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './hotelAPI.css';
+import { Link } from "react-router-dom";
 
 function HotelList() {
   const [hotelData, setHotelData] = useState([]);
@@ -136,6 +137,7 @@ function HotelList() {
           </div>
         </div>
       </div>
+      <button className="tombol-balikapi"><Link to="/">Back</Link></button>
     </div>
   );
 }
