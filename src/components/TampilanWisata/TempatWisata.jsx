@@ -59,11 +59,11 @@ function TempatWisata() {
                             text="Miniature Park, Majestic Experience: Taman Mini Indonesia Indah"
                             onClick={() => showPopUpCard("Taman Mini Indonesia Indah", "Perpaduan sempurna dari kekayaan budaya Indonesia! Sebuah taman yang menjadi wadah bagi kebudayaan dari 33 provinsi Indonesia pada tahun 1975. Di sini, Anda akan menemukan aneka aspek kehidupan sehari-hari masyarakat yang terwakili melalui anjungan daerah berarsitektur tradisional. Mulai dari busana tradisional yang memukau, tarian-tarian yang memikat, hingga tradisi-tradisi yang memikat hati. Setiap sudut menggambarkan keindahan dan keunikan budaya bangsa ini dengan begitu memikat!", Taman)}
                         />
-                        <GambarWisata
+                        {/* <GambarWisata
                             src={Museum}
                             text='"Trunk Tales, Ancient Trails: Elephant Museum, Where History Roars and Beauty Soars"'
                             onClick={() => showPopUpCard("Elephant Museum", "Selamat datang di Museum Gajah, mercusuar kebudayaan di pusat Jakarta! Sebagai museum tertua dan terbesar di Asia Tenggara, didirikan pada 24 April 1778, Museum Gajah memamerkan kekayaan arkeologi, sejarah, etnografi, dan geografi Indonesia. Dengan koleksi yang mengagumkan, setiap langkah di dalamnya membawa Anda melintasi peradaban dari masa lampau hingga masa kini.", Museum)}
-                        />
+                        /> */}
                     </ul>
                     <ul className="cards__items">
                         <GambarWisata
@@ -83,8 +83,8 @@ function TempatWisata() {
                         />
                     </ul>
                     <ul className="cards__items">
-                    {showMore && (
-                            <>
+                    {/* {showMore && (
+                            <> */}
                         <GambarWisata
                             src={GI}
                             text="Grand Indonesia: Elevating Experiences, Every Step of the Way!"
@@ -95,17 +95,17 @@ function TempatWisata() {
                             text="Central Park: Where Urban Chic Meets Green Serenity!"
                             onClick={() => showPopUpCard("Monas", "Monumen Nasional, atau yang lebih dikenal dengan sebutan Monas, adalah sebuah simbol kebanggaan yang resmi dibangun pada 17 Agustus 1961, dengan pintu pertamanya dibuka untuk umum pada tanggal 12 Juli 1975. Menara setinggi 132 meter, sekitar 433 kaki, ini menjulang gagah di atas lahan seluas 80 hektar. Monas bukan hanya sebuah landmark fisik, tapi juga sebuah penanda penting dalam sejarah dan identitas nasional Indonesia, menjadi tujuan wisata yang mendebarkan serta tempat peringatan yang megah bagi para pengunjung dari dalam dan luar negeri.", CP)}
                         />
-                        <GambarWisata
+                        {/* <GambarWisata
                             src={Glodok}
                             text="China Town Glodok: Where Tradition Meets Modern Vibrancy!"
                             onClick={() => showPopUpCard("Old Town Jakarta", "Kota Tua Jakarta menggoda dengan kekayaan sejarahnya, masih memancarkan jejak kuat dari masa kolonial Belanda dalam arsitektur bangunannya. Setiap sudutnya memancarkan pesona zaman dahulu, membiarkan Anda menyelami atmosfer masa lalu melalui jalan-jalan bersejarah dan museum-museum yang memamerkan artefak berharga. Rasakan gemerlapnya masa lampau yang terwujud dalam keindahan bangunan-bangunan dan cerita-cerita yang terkandung di dalamnya.", Glodok)}
-                        />
-                        </>
-                        )}
+                        /> */}
+                        {/* </>
+                        )} */}
                     </ul>
                     <ul className="cards__items">
-                    {showMore && (
-                            <>
+                    {/* {showMore && (
+                            <> */}
                         <GambarWisata
                             src={TIM}
                             text="Taman Ismail Marzuki: Where Arts and Culture Flourish in Harmony!"
@@ -121,14 +121,14 @@ function TempatWisata() {
                             text="Sea World Jakarta: Dive into an Ocean of Discovery and Wonder!"
                             onClick={() => showPopUpCard("Old Town Jakarta", "Kota Tua Jakarta menggoda dengan kekayaan sejarahnya, masih memancarkan jejak kuat dari masa kolonial Belanda dalam arsitektur bangunannya. Setiap sudutnya memancarkan pesona zaman dahulu, membiarkan Anda menyelami atmosfer masa lalu melalui jalan-jalan bersejarah dan museum-museum yang memamerkan artefak berharga. Rasakan gemerlapnya masa lampau yang terwujud dalam keindahan bangunan-bangunan dan cerita-cerita yang terkandung di dalamnya.", SWJ)}
                         />
-                        </>
-                        )}
+                        {/* </>
+                        )} */}
                     </ul>
-                    {!showMore && (
+                    {/* {!showMore && (
                         <button className="button-wisata" onClick={loadMore}>
                             Load More
                         </button>
-                    )}
+                    )} */}
                 </div>
             </div>
             {showPopUp && (
