@@ -2,12 +2,14 @@ import * as React from "react";
 import "./Index.css";
 import App from "./App";
 import Game from "./components/Game/Game";
-import CardList from "./components/Makanan/Makanan";
 import * as ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Member from "./components/Member/Member";
+import CardList from "./components/Makanan/Makanan";
+import CardList1 from "./components/Minuman/Minuman";
+import HotelList from "./components/HotelAPI/hotelAPI";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +25,16 @@ const router = createBrowserRouter([
     element:<Member /> ,
   },
   {
-    path: "/kulinerMKN",
-    element: <CardList />,
+    path: "/makan",
+    element: <CardList />
+  },
+  {
+    path: "/minum",
+    element: <CardList1 />
+  },
+  {
+    path: "/hotel",
+    element: <HotelList />
   },
 ]);
 
