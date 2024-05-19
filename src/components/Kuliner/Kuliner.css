@@ -1,59 +1,176 @@
-.judul-kuliner {
-  margin-top: -50px;
-  font-size: 40px;
-  text-transform: uppercase;
+.container-kuliner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
 }
 
-.sub-judul{
-    text-align: center;
-}
-.card-kuliner {
+.card-kuliner{
+  position: relative;
+  width: 350px;
+  height: 350px;
+  perspective: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
 }
 
-.isi-card {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../../gambar/makanan.jpg");
+.isi-card-kuliner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.judul-kuliner{
+  margin-top: -60px;
+}
+
+.sub-judul-kuliner{
+  text-align: center;
+  margin-bottom: -40px;
+}
+
+.card-kuliner:hover .isi-card-kuliner{
+  transform: rotateY(-180deg);
+}
+
+.tampilan-depan , .tampilan-belakang{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3) 
+  ), url('../../gambar/makanan1.jpg');
   background-size: cover;
-  object-fit: cover;
-  border: none;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  list-style-type: none ;
-  width: 400px;
-  height: 400px;
-  margin: 10px;
-  margin: 30px;
+  text-align: center;
+  padding: 10px;
 }
 
-.isi-card p{
-    text-align: justify;
-    padding: 15px;
+.tampilan-depan1 , .tampilan-belakang1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3) 
+  ),url('../../gambar/minuman.jpg');
+  background-size: cover;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
 }
 
-.isi-card h3{
-    text-align: center;
-    margin-top: -30px;
-    margin-bottom: -20px;
-    padding: 15px;
-    text-transform: uppercase;
+.tampilan-belakang{
+  background: black;
+  transform: rotateY(-180deg);
 }
 
-.isi-card button{
-    background: white;
-    border: none;
-    border-radius: 10px;
-    color: black;
-    padding: 8px;
+.tampilan-belakang h3{
+  text-transform: uppercase;
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
-.isi-card button:hover{
-    background: rgb(0, 0, 0);
+
+.tampilan-belakang p{
+  margin-bottom: 15px;
+}
+
+.tampilan-belakang button{
+  background: white;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  padding: 8px;
+}
+
+.tampilan-belakang button:hover{
+    background:rgb(57, 55, 55);
     color: white;
+    transition: 0.5s;
+}
+
+.tampilan-belakang1{
+  background: black;
+  transform: rotateY(-180deg);
+}
+
+.tampilan-belakang1 h3{
+  text-transform: uppercase;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+.tampilan-belakang1 p{
+  margin-bottom: 15px;
+}
+
+.tampilan-belakang1 button{
+  background: white;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  padding: 8px;
+}
+
+.tampilan-belakang1 button:hover{
+  background:rgb(57, 55, 55);
+    color: white;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1240px) {
+  .container-kuliner {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; 
+  }
+
+  .card-kuliner {
+    width: 400px;
+    height: 400px;
+  }
+
+  .tampilan-depan, .tampilan-belakang {
+    margin-bottom: 20px; 
+  }
+
+  .tampilan-depan h3, .tampilan-belakang h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .tampilan-depan p, .tampilan-belakang p {
+    font-size: 15px;
+  }
+
+  .tampilan-depan1, .tampilan-belakang1 {
+    margin-top: 20px; 
+  }
+
+  .tampilan-depan1 h3, .tampilan-belakang1 h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .tampilan-depan1 p, .tampilan-belakang1 p {
+    font-size: 15px;
+  }
 }

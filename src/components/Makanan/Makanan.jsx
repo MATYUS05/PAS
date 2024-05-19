@@ -1,5 +1,6 @@
 import React from 'react';
 import './Makanan.css'; 
+import { Link } from "react-router-dom";
 import ketoprakImage from '../../gambar/ketoprak.jpg';
 import sotobetawiImage from '../../gambar/soto betawi.webp';
 import nasiuduk from '../../gambar/nasi uduk.webp';
@@ -100,6 +101,7 @@ const CardList = () => {
       {chunkedData.map((rowData, index) => (
         <Row key={index} cards={rowData} />
       ))}
+      <button className="tombol-balik"><Link to="/">Back</Link></button>
     </div>
   );
 };

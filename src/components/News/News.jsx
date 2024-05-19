@@ -34,7 +34,7 @@ export default function News() {
   };
 
   return (
-    <div className="container" data-aos='fade-up'>
+    <div data-aos='fade-up'>
       {displayedNews.map((data, index) => (
         <NewsCard
           key={index}

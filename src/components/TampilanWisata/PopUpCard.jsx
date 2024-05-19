@@ -1,5 +1,3 @@
-// PopUpCard.js
-
 import React from 'react';
 import './PopUpCard.css';
 

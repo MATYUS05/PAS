@@ -3,7 +3,6 @@ import "./News.css";
 
 function NewsCard({ author, title, description, link }) {
   return (
-    <div>
       <div className="container">
         <div className="square">
           <div className="text-1">
@@ -18,7 +17,6 @@ function NewsCard({ author, title, description, link }) {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

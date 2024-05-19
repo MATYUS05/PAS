@@ -1,0 +1,143 @@
+/* hotelAPI.css */
+
+.container-hotel1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 100%;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+  }
+  
+  .search-sort-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    justify-content: center;
+  }
+  
+  .search-container {
+    flex: 1;
+  }
+  
+  .search-bar {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .sort-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort-buttons button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .sort-buttons button:hover, .search-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  .search-results, .bookmarked-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+  }
+  
+  .hotel-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .hotel-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+  }
+  
+  .hotel-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hotel-info {
+    padding: 15px;
+  }
+  
+  .hotel-name {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .hotel-address {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .bookmark-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .bookmark-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .search-sort-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-bar input, .search-bar button, .sort-buttons button {
+      width: 100%;
+    }
+  }
+  

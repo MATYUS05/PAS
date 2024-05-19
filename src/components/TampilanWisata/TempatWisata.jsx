@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./TempatWisata.css";
 import GambarWisata from "./GambarWisata";
-import PopUpCard from "./PopUpCard"; // Import komponen pop-up card
+import PopUpCard from "./PopUpCard"; 
 import KotaTua from "../../gambar/kotatua.png";
 import Ancol from "../../gambar/Ancol1.png";
 import Monas from "../../gambar/monas.png";
 import Pulau from "../../gambar/pulauseribu.jpg";
 import Taman from "../../gambar/TMII.jpg";
 import Museum from "../../gambar/Museum.jpg";
+import GI from "../../gambar/grandindonesia.jpg";
+import CP from "../../gambar/centralpark.jpg";
+import Glodok from "../../gambar/chinatown.jpg";
+import TIM from "../../gambar/TIM.jpg";
+import MBank from "../../gambar/museum1.jpg";
+import SWJ from "../../gambar/SWJ.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -20,6 +26,7 @@ function TempatWisata() {
     const [popUpContent, setPopUpContent] = useState("");
     const [popUpDescription, setPopUpDescription] = useState("");
     const [popUpImage, setPopUpImage] = useState("");
+    const [showMore, setShowMore] = useState(false);
 
     const showPopUpCard = (content, description, image) => {
         setPopUpContent(content);
@@ -30,6 +37,10 @@ function TempatWisata() {
 
     const hidePopUpCard = () => {
         setShowPopUp(false);
+    };
+
+    const loadMore = () => {
+        setShowMore(true);
     };
 
     return (
@@ -71,6 +82,53 @@ function TempatWisata() {
                             onClick={() => showPopUpCard("Old Town Jakarta", "Kota Tua Jakarta menggoda dengan kekayaan sejarahnya, masih memancarkan jejak kuat dari masa kolonial Belanda dalam arsitektur bangunannya. Setiap sudutnya memancarkan pesona zaman dahulu, membiarkan Anda menyelami atmosfer masa lalu melalui jalan-jalan bersejarah dan museum-museum yang memamerkan artefak berharga. Rasakan gemerlapnya masa lampau yang terwujud dalam keindahan bangunan-bangunan dan cerita-cerita yang terkandung di dalamnya.", KotaTua)}
                         />
                     </ul>
+                    <ul className="cards__items">
+                    {showMore && (
+                            <>
+                        <GambarWisata
+                            src={GI}
+                            text="Grand Indonesia: Elevating Experiences, Every Step of the Way!"
+                            onClick={() => showPopUpCard("Ancol", "Taman Impian Jaya Ancol, sebuah destinasi rekreasi tematik terbesar dan paling lengkap di Jakarta Utara, hadir sebagai oase hiburan yang menghadap langsung ke Laut Jawa. Dengan luas lahan mencapai 80 hektar, kawasan ini membanggakan koleksi wahana-wahana seru dan pantai yang menyejukkan, menciptakan pengalaman tak terlupakan bagi pengunjung yang mencari petualangan dan kesenangan di tepi laut.", GI)}
+                        />
+                        <GambarWisata
+                            src={CP}
+                            text="Central Park: Where Urban Chic Meets Green Serenity!"
+                            onClick={() => showPopUpCard("Monas", "Monumen Nasional, atau yang lebih dikenal dengan sebutan Monas, adalah sebuah simbol kebanggaan yang resmi dibangun pada 17 Agustus 1961, dengan pintu pertamanya dibuka untuk umum pada tanggal 12 Juli 1975. Menara setinggi 132 meter, sekitar 433 kaki, ini menjulang gagah di atas lahan seluas 80 hektar. Monas bukan hanya sebuah landmark fisik, tapi juga sebuah penanda penting dalam sejarah dan identitas nasional Indonesia, menjadi tujuan wisata yang mendebarkan serta tempat peringatan yang megah bagi para pengunjung dari dalam dan luar negeri.", CP)}
+                        />
+                        <GambarWisata
+                            src={Glodok}
+                            text="China Town Glodok: Where Tradition Meets Modern Vibrancy!"
+                            onClick={() => showPopUpCard("Old Town Jakarta", "Kota Tua Jakarta menggoda dengan kekayaan sejarahnya, masih memancarkan jejak kuat dari masa kolonial Belanda dalam arsitektur bangunannya. Setiap sudutnya memancarkan pesona zaman dahulu, membiarkan Anda menyelami atmosfer masa lalu melalui jalan-jalan bersejarah dan museum-museum yang memamerkan artefak berharga. Rasakan gemerlapnya masa lampau yang terwujud dalam keindahan bangunan-bangunan dan cerita-cerita yang terkandung di dalamnya.", Glodok)}
+                        />
+                        </>
+                        )}
+                    </ul>
+                    <ul className="cards__items">
+                    {showMore && (
+                            <>
+                        <GambarWisata
+                            src={TIM}
+                            text="Taman Ismail Marzuki: Where Arts and Culture Flourish in Harmony!"
+                            onClick={() => showPopUpCard("Ancol", "Taman Impian Jaya Ancol, sebuah destinasi rekreasi tematik terbesar dan paling lengkap di Jakarta Utara, hadir sebagai oase hiburan yang menghadap langsung ke Laut Jawa. Dengan luas lahan mencapai 80 hektar, kawasan ini membanggakan koleksi wahana-wahana seru dan pantai yang menyejukkan, menciptakan pengalaman tak terlupakan bagi pengunjung yang mencari petualangan dan kesenangan di tepi laut.", TIM)}
+                        />
+                        <GambarWisata
+                            src={MBank}
+                            text="Museum Bank Indonesia: Unraveling the Rich Tapestry of Financial History!"
+                            onClick={() => showPopUpCard("Monas", "Monumen Nasional, atau yang lebih dikenal dengan sebutan Monas, adalah sebuah simbol kebanggaan yang resmi dibangun pada 17 Agustus 1961, dengan pintu pertamanya dibuka untuk umum pada tanggal 12 Juli 1975. Menara setinggi 132 meter, sekitar 433 kaki, ini menjulang gagah di atas lahan seluas 80 hektar. Monas bukan hanya sebuah landmark fisik, tapi juga sebuah penanda penting dalam sejarah dan identitas nasional Indonesia, menjadi tujuan wisata yang mendebarkan serta tempat peringatan yang megah bagi para pengunjung dari dalam dan luar negeri.", MBank)}
+                        />
+                        <GambarWisata
+                            src={SWJ}
+                            text="Sea World Jakarta: Dive into an Ocean of Discovery and Wonder!"
+                            onClick={() => showPopUpCard("Old Town Jakarta", "Kota Tua Jakarta menggoda dengan kekayaan sejarahnya, masih memancarkan jejak kuat dari masa kolonial Belanda dalam arsitektur bangunannya. Setiap sudutnya memancarkan pesona zaman dahulu, membiarkan Anda menyelami atmosfer masa lalu melalui jalan-jalan bersejarah dan museum-museum yang memamerkan artefak berharga. Rasakan gemerlapnya masa lampau yang terwujud dalam keindahan bangunan-bangunan dan cerita-cerita yang terkandung di dalamnya.", SWJ)}
+                        />
+                        </>
+                        )}
+                    </ul>
+                    {!showMore && (
+                        <button className="button-wisata" onClick={loadMore}>
+                            Load More
+                        </button>
+                    )}
                 </div>
             </div>
             {showPopUp && (
