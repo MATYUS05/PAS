@@ -7,7 +7,7 @@ import Prev from "../../gambar/prev.png";
 import Chang from "../../gambar/chang2.jpg";
 import Edbert from "../../gambar/edbert1.jpg";
 import Jansen from "../../gambar/jansen1.jpg";
-import Matthew from "../../gambar/matthew1.jpg";
+import Matthew from "../../gambar/matthew.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
