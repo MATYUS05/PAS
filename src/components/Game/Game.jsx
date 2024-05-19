@@ -80,6 +80,7 @@ function Game() {
     }, []);
 
     return (
+        <div className="GameBg">
         <div className="containers">
             <h2>Scramble Word Game</h2>
             <div className="content">
@@ -95,6 +96,7 @@ function Game() {
                 </div>
             </div>
             <button className="tombol-balik"><Link to="/">Back</Link></button>
+        </div>
         </div>
     );
 }
