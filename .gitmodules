@@ -1,0 +1,3 @@
+[submodule "PAS"]
+	path = PAS
+	url = https://github.com/MATYUS05/PAS.git
