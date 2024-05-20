@@ -22,9 +22,8 @@ function HotelList() {
               city_ids: "289251",
             },
             headers: {
-              "X-RapidAPI-Key":
-                "063041d651mshf3c0857c192f57ep13c57ajsn08506019b5c4",
-              "X-RapidAPI-Host": "yahoo-weather5.p.rapidapi.com",
+              'X-RapidAPI-Key': 'f169eb8f65mshae569ce93b34ea9p17a785jsn5b4254ebbb4d',
+              'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
             },
           }
         );
