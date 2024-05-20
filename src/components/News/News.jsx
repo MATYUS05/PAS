@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import NewsCard from "./NewsCard";
 import "./News.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import dataNews from "./dataNews.json";
 
 export default function News() {
-  const [news, setNews] = useState([]);
+  const [news, setNews] = useState(dataNews);
   const [displayedNews, setDisplayedNews] = useState([]);
-  const [displayIndex, setDisplayIndex] = useState(3); 
+  const [displayIndex, setDisplayIndex] = useState(3);
 
   const url =
     "https://newsapi.org/v2/top-headlines?country=id&apiKey=3fbd14659231481bb8ea8a57584cd579";
@@ -24,8 +25,8 @@ export default function News() {
   }
 
   useEffect(() => {
-    fetchNews();
-    AOS.init({duration: 2000})
+    // fetchNews();
+    AOS.init({ duration: 2000 });
   }, []);
 
   const loadMore = () => {
@@ -34,7 +35,7 @@ export default function News() {
   };
 
   return (
-    <div data-aos='fade-up'>
+    <div data-aos="fade-up">
       {displayedNews.map((data, index) => (
         <NewsCard
           key={index}
@@ -44,7 +45,9 @@ export default function News() {
           link={data.url}
         />
       ))}
-      <div className="load-more" onClick={loadMore}>Load More</div>
+      <div className="load-more" onClick={loadMore}>
+        Load More
+      </div>
     </div>
   );
 }
