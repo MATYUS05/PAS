@@ -105,10 +105,7 @@ h1 {
 
 @media only screen and (min-width: 1230px) {
   .content__blog__container {
-    width: 84%;
-  }
-  .button-wisata{
-    margin-right: 400px;
+    width: 94%;
   }
 }
 
@@ -121,5 +118,36 @@ h1 {
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .cards {
+    padding: 2rem 1rem;
+  }
+
+  .cards__container {
+    width: 100%;
+  }
+
+  .cards__item {
+    margin: 0.5rem 0;
+    flex-direction: column;
+  }
+
+  .cards__item__info {
+    padding: 10px 15px;
+  }
+
+  .cards__item__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .button-wisata {
+    margin: 10px auto;
+    width: 80px;
+    padding: 5px;
+    font-size: 14px;
   }
 }

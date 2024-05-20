@@ -11,7 +11,7 @@ const HotelPage = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div className="container" id="hotel">
+    <div id="hotel" >
       <div className="hotel-container" data-aos="fade-up">
         <h1>HOTEL AND DESTINATION</h1>
         <div className="hotel-card1">

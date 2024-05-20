@@ -148,7 +148,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 910px) {
   .search-sort-container {
     flex-direction: column;
     align-items: stretch;

@@ -6,7 +6,7 @@ import Next from "../../gambar/next.png";
 import Prev from "../../gambar/prev.png";
 import Chang from "../../gambar/chang2.jpg";
 import Edbert from "../../gambar/edbert1.jpg";
-import Jansen from "../../gambar/jansen1.jpg";
+import Jansen from "../../gambar/jansen.jpg";
 import Matthew from "../../gambar/matthew.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,7 +32,7 @@ const Member = () => {
     slider.current.style.transform = `translateX(${tx}%)`;
   };
   return (
-    <div className="container">
+    <div>
       <div className="Member" id="contact" data-aos="fade-up">
         <h1>About Us</h1>
         <img src={Next} alt="" className="next-btn" onClick={slideForward} />
@@ -48,7 +48,7 @@ const Member = () => {
                     <span>Jakarta, Indonesia</span>
                   </div>
                 </div>
-                <p>
+                <p className="deskripsi">
                   Hanya pemuda biasa yang memiliki tujuan untuk survive di
                   Informatika. Quotes untuk semester ini -{">"} Di dunia coding,
                   setiap karakter memiliki arti, mengarungi lautan instruksi
@@ -65,7 +65,7 @@ const Member = () => {
                     <span>Jambi, Indonesia</span>
                   </div>
                 </div>
-                <p>
+                <p className="deskripsi">
                   Saya adalah pemuda merantau dari jambi dengan harapan orang
                   tua di tangan agar bisa menjadi pemuda sukses saya memiliki
                   prinsip hidup : selingkuh hanya untuk suami istri kalau masi
@@ -82,7 +82,7 @@ const Member = () => {
                     <span>Banten, Indonesia</span>
                   </div>
                 </div>
-                <p>
+                <p className="deskripsi">
                   Pemuda yang yakin sabar sadar. Mahasiswa aktif UMN angkatan
                   2023 jurusan informatika. Gitar kupetik bassku betot, hai nona
                   cantik you're always in my thoughts {"<"}3
@@ -98,7 +98,7 @@ const Member = () => {
                     <span>Banten, Indonesia</span>
                   </div>
                 </div>
-                <p>
+                <p className="deskripsi">
                   Saya merupakan lelaki asli daratan Cina memiliki masa lalu
                   sebagai pristel master dan memutuskan untuk mengubah masa
                   depan dengan merantau ke negri konoha dan menempuh ilmu coding
@@ -108,7 +108,9 @@ const Member = () => {
             </li>
           </ul>
         </div>
-        <button className="tombol-balik"><Link to="/">Back</Link></button>
+        <button className="tombol-balik">
+          <Link to="/">Back</Link>
+        </button>
       </div>
     </div>
   );

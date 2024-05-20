@@ -66,37 +66,42 @@
 
 @media (max-width: 768px) {
   .Member {
-    padding: 0 20px;
+      margin-top: 40px;
+      padding: 0 20px;
   }
 
   .next-btn, .prev-btn {
-    padding: 10px;
-    width: 40px;
+      padding: 10px;
+      width: 40px;
   }
 
   .slider ul {
-    width: 100%;
-    transform: translateX(0);
+      width: 200%;
+      transform: translateX(50); 
+      overflow: visible;
   }
 
   .slider ul li {
-    width: 100%;
-    padding: 10px;
+      width: 100%;
+      padding: 10px;
   }
 
   .slide {
-    padding: 20px;
+      padding: 20px;
   }
 
   .slide img {
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
   }
 
   .member-info {
-    font-size: 14px;
-    flex-direction: column;
-    align-items: flex-start;
+      font-size: 14px;
+      flex-direction: column;
+  }
+
+  .deskripsi{
+    font-size: 11px;
   }
 }

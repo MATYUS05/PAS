@@ -8,30 +8,31 @@
     padding: 20px;
     background-color: #FFFFFF;
     border-radius: 5px;
-    overflow: hidden; 
+    overflow: hidden;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .TtgJkt img {
     width: 100%;
-    height: auto; 
-    border-radius: 3px; 
+    height: auto;
+    border-radius: 3px;
 }
 
 .TtgJkt h1 {
     text-transform: uppercase;
     margin-bottom: 10px;
-    color: #333333; 
-    font-size: 24px; 
-    font-weight: bold; 
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .TtgJkt p {
     text-align: center;
-    line-height: 1.6; 
-    color: #666666; 
-    font-size: 16px; 
-    padding: 0 10px; 
+    line-height: 1.6;
+    color: #666666;
+    font-size: 16px;
+    padding: 0 10px;
 }
 
 .TtgJkt:hover {
@@ -50,9 +51,39 @@
         padding: 10px;
     }
     .hide-mobile-menu {
-        display: none; /* Sembunyikan elemen .hide-mobile-menu */
+        display: none; 
     }
     nav ul {
-        z-index: 1; /* Tampilkan menu di atas konten utama */
+        z-index: 1; 
+    }
+}
+
+@media (max-width: 600px) {
+    .TtgJkt {
+        width: 100%; 
+        max-width: none; 
+        padding: 20px; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    .TtgJkt h1 {
+        font-size: 22px; 
+        margin-bottom: 12px; 
+    }
+
+    .TtgJkt p {
+        font-size: 15px; 
+        text-align: justify;
+        padding: 0 10px; 
+    }
+
+    .TtgJkt img {
+        border-radius: 5px; 
+    }
+
+    .TtgJkt:hover {
+        transform: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     }
 }
